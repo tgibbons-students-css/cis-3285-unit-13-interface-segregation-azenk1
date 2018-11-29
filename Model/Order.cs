@@ -12,5 +12,17 @@ namespace Model
         public Guid id { get; set; }
         public string product { get; set; }
         public int amount { get; set; }
+
+        public string toString()
+        {
+            string retString;
+
+            retString = "Order of " + amount + " " + product;
+
+            return retString;
+    
+        }
+
+}       
     }
-}
+
